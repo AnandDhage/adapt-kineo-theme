@@ -1,58 +1,57 @@
 .extension-tutor {
+	.tutor {
+		background-color: @darkGrey;
+		color: @white;
+		left: 0;
+	}
 
-    .tutor {
-        left: 0;
-        background-color: @darkGrey;
-        color: @white;
-    }
+	.tutor-content {
+		margin: auto;
+		max-width: @device-width-large;
+	}
 
-    .tutor-content {
-        max-width: @device-width-large;
-        margin: auto;
-    }
+	.tutor-inner {
+		padding: 40px 0 30px;
 
-    .tutor-inner {
-        padding: 40px 0 30px;
+		@media all and (max-width: @device-width-large) {
+			padding: 40px 20px 20px 30px;
+		}
+	}
 
-        @media all and (max-width: @device-width-large) {
-            padding: 40px 20px 20px 30px;
-        }
-    }
+	.tutor-done {
+		border: 2px solid @white;
+		border-radius: 50%;
+		margin: 10px;
+		padding: 5px;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		.transition-border-color;
 
-    .tutor-done {
-        padding: 5px;
-        margin: 10px;
-        border-radius: 50%;
-        border: 2px solid @white;
-        position:absolute;
-        top: 0px;
-        right:0px;
-        .transition-border-color;
+		.no-touch &:hover {
+			border-color: darken(@white, 20%);
 
-        .no-touch &:hover {
-            border-color: darken(@white, 20%);
+			.tutor-icon-close {
+				color: darken(@white, 20%);
+			}
+		}
+	}
 
-            .tutor-icon-close {
-                color: darken(@white, 20%);
-            }
-        }
-    }
+	.tutor-icon-close {
+		color: @white;
+		.transition-color;
+	}
 
-    .tutor-icon-close {
-        color: @white;
-        .transition-color;
-    }
+	.tutor-title {
+		color: @white;
+		margin-bottom: 10px;
+	}
 
-    .tutor-title {
-        margin-bottom: 10px;
-        color: @white;
-    }
+	.tutor-title-inner {
+		font-size: 36px;
+	}
 
-    .tutor-title-inner {
-        font-size: 36px;
-    }
-
-    .tutor-body-inner {
-        color: @white;
-    }
+	.tutor-body-inner {
+		color: @white;
+	}
 }

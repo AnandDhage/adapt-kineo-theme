@@ -1,9 +1,6 @@
 .tabs-component {
-
 	.tab-item {
-
 		.no-touch &:hover {
-
 			.tab-item-inner {
 				background-color: darken(@cyan, 10%);
 				color: @white;
@@ -11,7 +8,6 @@
 		}
 
 		&.selected {
-
 			.tab-item-inner {
 				background-color: darken(@cyan, 20%);
 				color: @white;
@@ -19,7 +15,6 @@
 		}
 
 		&.visited {
-
 			.tab-item-inner {
 				background-color: darken(@cyan, 20%);
 				color: @white;
@@ -37,19 +32,16 @@
 	}
 
 	.tabs-content-items {
-		border: 1px solid darken(@cyan, 20%);
 		background: @white;
+		border: 1px solid darken(@cyan, 20%);
 	}
 
 
 	/* TAB LAYOUT LEFT */
 
 	&.tab-layout-left {
-
 		.tab-item {
-
 			&.selected {
-
 				&:after {
 					border-color: transparent transparent transparent darken(@cyan, 20%);
 				}
@@ -61,7 +53,6 @@
 		}	
 
 		@media all and (max-width: @device-width-medium) {
-
 			.tab-item {
 				background-color: @cyan;
 
@@ -77,6 +68,6 @@
 					background-color: darken(@cyan, 20%);
 				}
 			}
-	    }
+		}
 	}
 }

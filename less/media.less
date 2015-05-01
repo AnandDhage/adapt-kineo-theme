@@ -1,17 +1,16 @@
 .media-component {
-
 	.mejs-overlay-button {
-		background: url(assets/Media_Play.png);
+		background-image: url("assets/Media_Play.png");
 		background-position: center!important; // Override default behaviour
 		background-repeat: no-repeat;
 	}
 
 	.media-transcript {
-		display: inline-block;
-		padding: 15px;
-		margin-top: 15px;
 		background-color: @cyan;
 		color: @white;
+		display: inline-block;
+		margin-top: 15px;
+		padding: 15px;
 		.transition-all-colors;
 
 		.no-touch &:hover {
@@ -19,6 +18,4 @@
 			color: @white;
 		}
 	}
-
 }
-

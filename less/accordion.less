@@ -1,9 +1,8 @@
 .accordion-component {
-
 	.accordion-item-title {
 		background-color: @cyan;
-		color: @white;
 		border: none;
+		color: @white;
 		padding: 15px 15px 15px 44px;
 		.transition-all-colors;
 
@@ -46,8 +45,10 @@
 			.accordion-item-title-icon {
 				color: @white;
 			}
+
 			&.visited {
 				background-color: @turquiose;
+
 				.no-touch &:hover {
 					background-color: @turquiose;
 					
@@ -57,13 +58,12 @@
 	}
 
 	.accordion-item-body {
-		border: none;
 		background-color: darken(@cyan, 20%);
+		border: none;
 	}
 
 	.accordion-item-body-inner {
 		color: @white;
-		padding: 0 15px 15px;
+		padding: 15px;
 	}
-
 } 

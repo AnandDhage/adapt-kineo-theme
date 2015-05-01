@@ -1,9 +1,8 @@
 .article-reveal {
 	max-width: 1440px;
 	
-  	.article-reveal-open-button {
-
-  		&.show {
+	.article-reveal-open-button {
+		&.show {
 			cursor: default;
 			pointer-events: none;
 
@@ -14,55 +13,51 @@
 		}
 
 		&.visited {
-
-		  	.article-reveal-open-button-icon {
+			.article-reveal-open-button-icon {
 				color: @white;
-		  	}
+			}
 
-		  	&:hover {
-
+			&:hover {
 				.article-reveal-open-button-icon {
 					background-color: darken(@cyan, 20%);
 				}
 			}
 
 			&.show:hover {
-
 				.article-reveal-open-button-icon {
 					background-color: @cyan;
-					cursor:default;
+					cursor: default;
 				}
 
 				.article-reveal-open-button-text {
-	                opacity: 0;
-	                transform: translateY(20px);
-	            }
-		  	}
+					opacity: 0;
+					transform: translateY(20px);
+				}
+			}
 		}
 
 		&:hover {
-
 			.article-reveal-open-button-icon {
 				background-color: darken(@cyan, 20%);
 			}
 
 			.article-reveal-open-button-text {
-                opacity: 1;
-                transform: translateY(0);
-            }
+				opacity: 1;
+				transform: translateY(0);
+			}
 		}
 	}
 
-  	/*Reveal button styling */
+	/*Reveal button styling */
   
 	.article-reveal-open-button-icon {
 		background-color: @cyan;
-		color: @white;
-		.transition-all-colors;
 		border: none;
-		padding:15px;
 		box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+		color: @white;
+		padding: 15px;
 		margin-bottom: 10px;
+		.transition-all-colors;
 	}
   
 
@@ -70,19 +65,19 @@
 		color: darken(@cyan, 20%);
 		font-size: 16px;
 		opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.3s ease-in;
+		transform: translateY(20px);
+		transition: all 0.3s ease-in;
 	}
   
-  	/*Close button styling */
+	/*Close button styling */
 
-   	.article-reveal-close-button {
-	    background-color: @cyan;
-	    border: none;
-	    .transition-all-colors;
-	    bottom:-45px; 
-	  	right:75px;
-	  	box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+	.article-reveal-close-button {
+		background-color: @cyan;
+		border: none;
+		bottom: -45px; 
+		box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+		right: 75px;
+		.transition-all-colors;
 
 		.no-touch &:hover {
 			background-color: darken(@cyan, 20%);
@@ -93,15 +88,14 @@
 		}
 	}
   
-  	.article-reveal-close-button-icon {
-	    color: @white;
-	    font-size: 32px;
+	.article-reveal-close-button-icon {
+		color: @white;
+		font-size: 32px;
 	}
   
-  	.article-reveal-close-button-text {
+	.article-reveal-close-button-text {
 		color: @cyan;
 		line-height: 32px;
 		.transition-color;
-	}
-  
+	}  
 }

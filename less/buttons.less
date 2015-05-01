@@ -2,90 +2,90 @@
 // ==============
 
 .button, button {
-    background-color: @darkGrey;
-    color: @white;
-    padding: 10px;
-    text-decoration: none;
-    display:inline-block;
-    border: none;
-    .transition-all-colors;
+	background-color: @darkGrey;
+	border: none;
+	color: @white;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	.transition-all-colors;
 
-    .no-touch & {
-        &:hover {
-            background-color: darken(@darkGrey, 10%);
-            color: @white;
-        } 
-    }
+	.no-touch & {
+		&:hover {
+			background-color: darken(@darkGrey, 10%);
+			color: @white;
+		} 
+	}
 
-    &.disabled, &:disabled {
-        background-color: @grey!important;
-        color: @white!important;
-        cursor:default;
-    }
+	&.disabled, &:disabled {
+		background-color: @grey!important;
+		color: @white!important;
+		cursor: default;
+	}
 
 }
 
 .buttons {
-    margin-top:@button-margin-top;
-    margin-bottom:@button-margin-bottom;
-    position:relative;
+	margin-bottom: @button-margin-bottom;
+	margin-top: @button-margin-top;
+	position: relative;
 
-    button {
-        width:49.5%;
-        float:left;
+	button {
+		float: left;
+		width: 49.5%;
 
-        &.buttons-action {
-            margin-right: 0.5%;
-        }
+		&.buttons-action {
+			margin-right: 0.5%;
+		}
 
-        &.buttons-feedback {
-            margin-left: 0.5%;
-        }
-    }
+		&.buttons-feedback {
+			margin-left: 0.5%;
+		}
+	}
 
-    .buttons-display {
-        position:relative;
-        border:@button-border;
-        border-top:none;
-        background-color:@inverted-background-color;
-        color:@inverted-foreground-color;
-    }
+	.buttons-display {
+		background-color: @inverted-background-color;
+		border: @button-border;
+		border-top: none;
+		color: @inverted-foreground-color;
+		position: relative;
+	}
 
-    .buttons-marking-icon {
-        position:absolute;
-        left:50%;
-        top:50%;
-        width: 42px;
-        height: 42px;
-        font-size: 32px;
-        line-height: 42px;
-        text-align: center;
-        border-radius: 50%;
-        margin-left: -21px;
-        margin-top: -21px;
-        color: @white;
-        border:none;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+	.buttons-marking-icon {
+		border: none;
+		border-radius: 50%;
+		box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+		color: @white;
+		height: 42px;
+		font-size: 32px;
+		left: 50%;
+		line-height: 42px;
+		margin-left: -21px;
+		margin-top: -21px;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		width: 42px;
 
-        &.icon-tick {
-            background-color:@green;
-        }
+		&.icon-tick {
+			background-color: @green;
+		}
 
-        &.icon-cross {
-            background-color:@red;
-        }
+		&.icon-cross {
+			background-color: @red;
+		}
 
-        @media all and (max-width: @device-width-small) {
-            width: 38px;
-            height: 38px;
-            line-height: 38px;
-            margin-left: -20px;
-            margin-top: -20px;
-        }
-    }
+		@media all and (max-width: @device-width-small) {
+			height: 38px;
+			line-height: 38px;
+			margin-left: -20px;
+			margin-top: -20px;
+			width: 38px;
+		}
+	}
 
-    .buttons-display-inner {
-        text-align:center;
-        padding: 10px;
-    }
+	.buttons-display-inner {
+		padding: 10px;
+		text-align: center;
+	}
 }

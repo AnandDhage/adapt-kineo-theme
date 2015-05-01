@@ -1,36 +1,35 @@
 .page-level-progress-navigation {
-    padding: 24px 36px 24px 18px!important; // Override defaults in extension
-    
-    .no-touch &:hover {
+	padding: 24px 36px 24px 18px!important; // Override defaults in extension
+	
+	.no-touch &:hover {
+		.page-level-progress-navigation-completion {
+			background-color: darken(@white, 20%);
+		}
 
-        .page-level-progress-navigation-completion {
-            background-color: darken(@white, 20%);
-        }
+		.page-level-progress-navigation-bar {
+			background-color: lighten(@darkGrey, 20%);
+		}
 
-        .page-level-progress-navigation-bar {
-            background-color: lighten(@darkGrey, 20%);
-        }
-
-        .page-level-progress-plus-icon {
-            color: darken(@white, 20%);
-        }
-    }
+		.page-level-progress-plus-icon {
+			color: darken(@white, 20%);
+		}
+	}
 }
 
 .page-level-progress-navigation-completion {
-    height: 8px;
-    background-color: @darkGrey;
-    border: 2px solid @white;
-    .transition-background-color;
+	background-color: @darkGrey;
+	border: 2px solid @white;
+	height: 8px;
+	.transition-background-color;
 }
 
 .page-level-progress-navigation-bar {
-    border-radius:0;
-    background-color: @white;
-    transition: all 0.3s ease-in;
-    .transition-background-color;
+	background-color: @white;
+	border-radius: 0;
+	transition: all 0.3s ease-in;
+	.transition-background-color;
 }
 
 .page-level-progress-plus-icon {
-    right: 9px;
+	right: 9px;
 }

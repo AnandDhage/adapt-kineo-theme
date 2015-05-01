@@ -1,22 +1,22 @@
 .resources {
-    .resources-filter a {
-        color:@white;
-        border-bottom:1px solid darken(@white, 20%);
-        .transition-all-colors;
+	.resources-filter a {
+		border-bottom: 1px solid darken(@white, 20%);
+		color: @white;
+		.transition-all-colors;
 
-        span {
-            border: none;
-            padding: 15px 0px;
-        }
+		span {
+			border: none;
+			padding: 15px 0px;
+		}
 
-        &.selected {
-            color: @white;
-            background-color: darken(@darkGrey, 20%);
-        }
+		&.selected {
+			background-color: darken(@darkGrey, 20%);
+			color: @white;
+		}
 
-        .no-touch &:hover {
-            color: @white;
-            background-color: darken(@darkGrey, 20%);
-        }
-    }
+		.no-touch &:hover {
+			background-color: darken(@darkGrey, 20%);
+			color: @white;
+		}
+	}
 }

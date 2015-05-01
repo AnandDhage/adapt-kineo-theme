@@ -1,53 +1,51 @@
 .page-level-progress-item-title {
-	background-color:@darkGrey;
-	color:@white;
-    .transition-all-colors;
+	background-color: @darkGrey;
+	color: @white;
+	.transition-all-colors;
 
 	&.disabled {
-		background-color:@grey;
-		color:@white;
+		background-color: @grey;
+		color: @white;
 
-        &:hover {
-            background-color:@grey!important;
-            color:@white!important;
-        }
+		&:hover {
+			background-color: @grey!important;
+			color: @white!important;
+		}
 	}
 
-    &:hover {
-        background-color: darken(@darkGrey, 20%);
-        color: @white;
+	&:hover {
+		background-color: darken(@darkGrey, 20%);
+		color: @white;
 
-        .page-level-progress-indicator-complete {
-
-            .page-level-progress-indicator-bar {
-                background-color: darken(@white, 20%);
-            }
-        }
-    }
+		.page-level-progress-indicator-complete {
+			.page-level-progress-indicator-bar {
+				background-color: darken(@white, 20%);
+			}
+		}
+	}
 }
 
 .page-level-progress-item-title-inner {
-	width:80%;
+	width: 80%;
 }
 
 .page-level-progress-indicator {
-    width: 15%;
-    height: 8px;
-    border: 1px solid @white;
 	background-color: transparent;
-    .transition-background-color;
+	border: 1px solid @white;
+	height: 8px;
+	width: 15%;
+	.transition-background-color;
 }
 
 .page-level-progress-indicator-complete {
+	.page-level-progress-indicator-bar {
+		background-color: @white;
+		.transition-background-color;
 
-    .page-level-progress-indicator-bar {
-        background-color: @white;
-        .transition-background-color;
-
-        &:hover {
-            background-color: darken(@white, 20%);
-        }
-    }
+		&:hover {
+			background-color: darken(@white, 20%);
+		}
+	}
 }
 
 .page-level-progress-indicator-bar {

@@ -1,5 +1,4 @@
 .gmcq-component {
-
 	.gmcq-item {
 		width: 25%;
 
@@ -8,30 +7,30 @@
 		}
 
 		input {
+			left: 50%;
 			opacity: 0;
 			top: 50%;
-			left: 50%;
 		}
 
 		label {
-			margin: 10px!important; // Override odd/even defaults
-			border: none;
 			background-color: transparent!important; // Override all states
+			border: none;
+			margin: 10px!important; // Override odd/even defaults
 
 			.gmcq-answer-icon {
 				color: @black;
 			}
 
 			img {
-				vertical-align: baseline;
 				display: block;
 				margin: auto;
+				vertical-align: baseline;
 			}
 
 			&.selected {
 				.gmcq-item-icon {
-                    color:@black;
-                }
+					color: @black;
+				}
 			}
 		}
 	}
@@ -44,23 +43,19 @@
 }
 
 .no-touch {
+	.gmcq-component {
+		.gmcq-widget {
+			&:not(.disabled) {
+				.gmcq-item label:hover {
+					.gmcq-item-icon {
+						color: @black;
 
-    .gmcq-component {
-
-        .gmcq-widget {
-            &:not(.disabled) {
-                .gmcq-item label:hover {
-
-                    .gmcq-item-icon {
-                        color:@black;
-
-                        &:before {
-                        	content: "\e65d";
-                        }
-                    }
-                }
-            }
-        }
-    }
+						&:before {
+							content: "\e65d";
+						}
+					}
+				}
+			}
+		}
+	}
 }
-

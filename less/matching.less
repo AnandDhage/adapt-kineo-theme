@@ -1,15 +1,12 @@
 .matching-component {
-
 	.matching-item {
-		padding-bottom: 0;
-		margin-bottom: 2px;
 		border: none;
+		margin-bottom: 2px;
+		padding-bottom: 0;
 	}
 
 	.matching-widget {
-
 		&.disabled {
-
 			.matching-select-container {
 				background-color: @grey!important; // Override all other states 
 			}
@@ -17,10 +14,10 @@
 	}
 
 	.matching-item-title {
-		background-color: lighten(@pink, 20%);
 		color: @white;
-		padding: 15px 20px;
+		background-color: lighten(@pink, 20%);
 		margin-bottom: 0;
+		padding: 15px 20px;
 	}
 
 	.matching-select-container {
@@ -42,15 +39,15 @@
 	}
 
 	.matching-select {
-		width: 100%;
-		padding: 15px 35px 15px 20px;
 		border-radius: 0;
+		padding: 15px 35px 15px 20px;
+		width: 100%;
 		.transition-all-colors;
 
 		&:focus {
-	        background-color: darken(@pink, 20%);
-	        color: @white;
-	    }
+			background-color: darken(@pink, 20%);
+			color: @white;
+		}
 	}
 
 	.matching-select-state {
@@ -62,13 +59,12 @@
 	}
 
 	.matching-correct-icon {
-        color: @white;
-    }
+		color: @white;
+	}
 
-    .matching-incorrect-icon {
-        color: @white;
-    }
-
+	.matching-incorrect-icon {
+		color: @white;
+	}
 
 	// IE Specific styling
 	.ie & {
@@ -87,20 +83,17 @@
 
 }
 
-
-
-
 // REMOVE/FIX BROWSER DEFAULT STYLING
 
 // Chrome, Safari
 select {
-    -webkit-appearance: none;
+	-webkit-appearance: none;
 
 }
 
 // IE10+
 select::-ms-expand {
-    display: none;
+	display: none;
 } 
 
 // FIREFOX/IE8+9 SELECT OVERRIDE FIX
@@ -111,6 +104,7 @@ select::-ms-expand {
 	select {
 		width: 115%!important;
 	}
+
 	.matching-component .matching-select {
 		width: 115%!important;
 	}

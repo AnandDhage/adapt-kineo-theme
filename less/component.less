@@ -2,71 +2,66 @@
 // =================
 
 .component {
+	.component-inner {
+	}
 
-    .component-inner {
-    }
+	.component-title {
+		margin-bottom: 20px;
+	}
 
-    .component-title {
-        margin-bottom: 20px;
-    }
+	.component-title-inner {
+		color: @cyan;
+	}
 
-    .component-title-inner {
-        color: @cyan;
-    }
+	.component-body {
+		margin-bottom: 20px;
+	}
 
-    .component-body {
-        margin-bottom: 20px;
-    }
+	.component-body-inner {
 
-    .component-body-inner {
+	}
 
-    }
+	.component-instruction {
+		margin-bottom: 20px;
+	}
 
-    .component-instruction {
-        margin-bottom: 20px;
-    }
+	.component-instruction-inner {
+		font-weight: 700;
+		-webkit-font-smoothing: antialiased;
+		
+		&.validation-error {
+			color: @validation-error-text-color;
+		}
+	}
 
-    .component-instruction-inner {
-        font-weight: 700;
-        -webkit-font-smoothing: antialiased;
-        
-        &.validation-error {
-            color: @validation-error-text-color;
-        }
-    }
+	&.question-component {
+		.component-title-inner {
+			color: @pink;
+		}
+	}
 
-    &.question-component {
+	&.component-full {
+		.component-title,
+		.component-body,
+		.component-instruction {
+			text-align: center;
+		}
+	}
 
-        .component-title-inner {
-            color: @pink;
-        }
-    }
+	&.component-medium {
+		max-width: @device-width-medium;
+		margin: auto;
 
-    &.component-full {
+		.component-title,
+		.component-body,
+		.component-instruction {
+			text-align: center;
+		}
+	}
 
-        .component-title,
-        .component-body,
-        .component-instruction {
-            text-align: center;
-        }
-    }
-
-    &.component-medium {
-        max-width: @device-width-medium;
-        margin: auto;
-
-        .component-title,
-        .component-body,
-        .component-instruction {
-            text-align: center;
-        }
-    }
-
-    &.component-right {
-
-        @media all and (max-width: @device-width-medium) {
-            margin-top: 40px;
-        }
-    }
-
+	&.component-right {
+		@media all and (max-width: @device-width-medium) {
+			margin-top: 40px;
+		}
+	}
 }

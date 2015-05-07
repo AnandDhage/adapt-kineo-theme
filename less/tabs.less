@@ -5,6 +5,13 @@
 				background-color: darken(@cyan, 10%);
 				color: @white;
 			}
+
+			&.visited {
+				.tab-item-inner {
+					background-color: darken(@cyan, 20%);
+					color: @white;
+				}
+			}
 		}
 
 		&.selected {
@@ -22,23 +29,21 @@
 		}
 	}
 
+	.tab-item-image {
+		border: 2px solid @white;
+	}
+
 	.tab-item-inner {
 		background-color: @cyan;
 		color: @white;
 	}
 
-	.tab-item-image {
-		border: 2px solid @white;
-	}
-
 	.tabs-content-items {
-		background: @white;
 		border: 1px solid darken(@cyan, 20%);
+		background: @white;
 	}
-
 
 	/* TAB LAYOUT LEFT */
-
 	&.tab-layout-left {
 		.tab-item {
 			&.selected {
@@ -50,23 +55,11 @@
 			&:after {
 				border-color: transparent transparent transparent @cyan;
 			}
-		}	
-
+		}
+		
 		@media all and (max-width: @device-width-medium) {
-			.tab-item {
-				background-color: @cyan;
-
-				.no-touch &:hover {
-					background-color: darken(@cyan, 10%);
-				}
-
-				&.selected {
-					background-color: darken(@cyan, 20%);
-				}
-
-				&.visited {
-					background-color: darken(@cyan, 20%);
-				}
+			.tabs-content-icon {
+				color: @cyan;
 			}
 		}
 	}

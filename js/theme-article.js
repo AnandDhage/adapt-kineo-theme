@@ -20,9 +20,14 @@ define(function(require) {
 			var backgroundImages = this.model.get('_themeArticleConfig')._backgroundImage;
 
 			var backgroundColor = this.model.get('_themeArticleConfig')._backgroundColor;
+
+			if (backgroundColor) {
+				this.$el.css({
+					backgroundColor: backgroundColor
+				});
+			}
 			
 			if (backgroundImages) {
-
 				if (Adapt.device.screenSize == 'large') {
 					backgroundImage = backgroundImages._large;
 				} else if (Adapt.device.screenSize == 'medium') {
@@ -35,15 +40,11 @@ define(function(require) {
 					backgroundImage: 'url(' + backgroundImage + ')'
 				});
 				
-			} else if (backgroundColor) {
-				this.$el.css({
-					backgroundColor: backgroundColor
-				});
 			}
 		}
 
 	});
 
 	return ThemeArticleView;
-	
+
 });

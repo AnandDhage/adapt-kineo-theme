@@ -1,0 +1,87 @@
+.slider-component {
+
+	// ==========================================================================
+	// fix for slider - makes slider sit centrally - removes mark after the scale
+	// ==========================================================================
+
+	/*.slider-scale-numbers, .slider-scale-labels, .slider-scaler, .slider-sliderange, .slider-outer-bar  {
+		margin-left: 5%;
+		margin-right: 5%;    
+	}
+
+	.slider-scale-numbers, .slider-outer-bar {
+		width:95%;
+	}
+
+	.slider-scale-labels, .slider-scaler, .slider-sliderange  {
+		width:90%;
+	}
+
+	.slider-item-state {
+		display:none;
+	}
+
+	.slider-scale-marker {
+		line-height: 27px;
+	}*/
+
+	.slider-scaler {
+		background-color: lighten(@font-body-color, 60%);
+	}
+
+	.slider-sliderange {
+		background-color: lighten(@font-body-color, 60%);
+		box-shadow: none;
+	}
+
+	.slider-handle {
+		background-color: @components-color-inverted;
+		// .components-color(background-color);
+
+		.no-touch &:hover {
+			.components-color-hover(background-color, 0%);
+			// .components-color-hover(background-color, 20%);
+		}
+	}
+
+	.slider-scale-marker {
+		box-shadow: none;
+	}
+
+	.slider-line {
+		background-color: lighten(@font-body-color, 60%);
+		height: 7px;
+		top: 0px;
+	}
+
+	.slider-bar {
+		.components-color-darken(background-color, 10%);
+	}
+
+	.slider-scale-marker {
+		.components-color(background-color);
+	}
+
+	.slider-outer-bar {
+		background-color: none;
+		border: none;
+		border-top: none;
+		border-bottom: none;
+		border-radius: none;
+		box-shadow: none;
+	}
+
+	.slider-model-answer {
+		box-shadow: none;
+	}
+
+	.slider-correct-icon {
+		color: @validation-success;
+		display: none;
+	}
+
+	.slider-incorrect-icon {
+		color: @validation-error;
+		display: none;
+	}
+}
